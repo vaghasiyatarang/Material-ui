@@ -14,11 +14,7 @@ const Pricing = React.lazy(() => import("./Component/Pricing"));
 const Products = React.lazy(() => import("./Component/Products"));
 import CircularProgress from "@mui/material/CircularProgress";
 
-
-
 function App() {
-
-
   return (
     <>
       {/* <Text_field /> */}
@@ -34,12 +30,13 @@ function App() {
           </h1>
         }
       >
-            <Routes>
-              <Route path="/" element={<Home />}></Route>
-              <Route path="/Blog" element={<Blog />}></Route>
-              <Route path="/Pricing" element={<Pricing />}></Route>
-              <Route path="/Products" element={<Products />}></Route>
-            </Routes>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Material-ui" element={<Home />}></Route>
+          <Route path="/Blog" element={<Blog />}></Route>
+          <Route path="/Pricing" element={<Pricing />}></Route>
+          <Route path="/Products" element={<Products />}></Route>
+        </Routes>
       </Suspense>
     </>
   );
